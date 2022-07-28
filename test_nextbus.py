@@ -4,109 +4,109 @@ from nextbus import BusHandler
 
 class TestBusHandlerMethods(unittest.TestCase):
     route_mock = [
-      {
-        "route_id": "901",
-        "agency_id": 0,
-        "route_label": "METRO Blue Line"
-      },
-      {
-        "route_id": "991",
-        "agency_id": 0,
-        "route_label": "Blue Line Bus"
-      },
-      {
-        "route_id": "902",
-        "agency_id": 0,
-        "route_label": "METRO Green Line"
-      }
-    ]
+	    {
+	        "route_id": "901",
+	        "agency_id": 0,
+	        "route_label": "METRO Blue Line"
+	    },
+	    {
+	        "route_id": "991",
+	        "agency_id": 0,
+	        "route_label": "Blue Line Bus"
+	    },
+	    {
+	        "route_id": "902",
+	        "agency_id": 0,
+	        "route_label": "METRO Green Line"
+	    }
+	]
 
     direction_mock = [
-      {
-        "direction_id": 0,
-        "direction_name": "Eastbound"
-      },
-      {
-        "direction_id": 1,
-        "direction_name": "Westbound"
-      }
-    ]
+	    {
+	        "direction_id": 0,
+	        "direction_name": "Eastbound"
+	    },
+	    {
+	        "direction_id": 1,
+	        "direction_name": "Westbound"
+	    }
+	]
 
     stop_mock = [
-      {
-        "place_code": "USBA",
-        "description": "U.S. Bank Stadium Station"
-      },
-      {
-        "place_code": "GOVT",
-        "description": "Government Plaza Station"
-      },
-      {
-        "place_code": "5SNI",
-        "description": "Nicollet Mall Station"
-      },
-      {
-        "place_code": "WARE",
-        "description": "Warehouse District/ Hennepin Ave Station"
-      },
-      {
-        "place_code": "TF1",
-        "description": "Target Field Station Platform 1"
-      }
-    ]
+	    {
+	        "place_code": "USBA",
+	        "description": "U.S. Bank Stadium Station"
+	    },
+	    {
+	        "place_code": "GOVT",
+	        "description": "Government Plaza Station"
+	    },
+	    {
+	        "place_code": "5SNI",
+	        "description": "Nicollet Mall Station"
+	    },
+	    {
+	        "place_code": "WARE",
+	        "description": "Warehouse District/ Hennepin Ave Station"
+	    },
+	    {
+	        "place_code": "TF1",
+	        "description": "Target Field Station Platform 1"
+	    }
+	]
 
     time_mock = {
-      "stops": [
-        {
-          "stop_id": 56332,
-          "latitude": 44.980177,
-          "longitude": -93.273202,
-          "description": "Warehouse Hennepin Ave Station"
-        }
-      ],
-      "alerts": [],
-      "departures": [
-        {
-          "actual": True,
-          "trip_id": "21225913-JUN22-RAIL-Weekday-02",
-          "stop_id": 56332,
-          "departure_text": "4 Min",
-          "departure_time": 1659014280,
-          "description": "to Mpls-Target Field",
-          "route_id": "902",
-          "route_short_name": "Green",
-          "direction_id": 1,
-          "direction_text": "WB",
-          "schedule_relationship": "Scheduled"
-        },
-        {
-          "actual": True,
-          "trip_id": "21225914-JUN22-RAIL-Weekday-02",
-          "stop_id": 56332,
-          "departure_text": "18 Min",
-          "departure_time": 1659015120,
-          "description": "to Mpls-Target Field",
-          "route_id": "902",
-          "route_short_name": "Green",
-          "direction_id": 1,
-          "direction_text": "WB",
-          "schedule_relationship": "Scheduled"
-        },
-        {
-          "actual": False,
-          "trip_id": "21226058-JUN22-RAIL-Weekday-02",
-          "stop_id": 56332,
-          "departure_text": "8:37",
-          "departure_time": 1659015420,
-          "description": "to Mpls-Target Field",
-          "route_id": "902",
-          "route_short_name": "Green",
-          "direction_id": 1,
-          "direction_text": "WB",
-          "schedule_relationship": "Scheduled"
-        }
-      ]
-    }
+	    "stops": [
+	        {
+	            "stop_id": 56332,
+	            "latitude": 44.980177,
+	            "longitude": -93.273202,
+	            "description": "Warehouse Hennepin Ave Station"
+	        }
+	    ],
+	    "alerts": [],
+	    "departures": [
+	        {
+	            "actual": True,
+	            "trip_id": "21225913-JUN22-RAIL-Weekday-02",
+	            "stop_id": 56332,
+	            "departure_text": "4 Min",
+	            "departure_time": 1659014280,
+	            "description": "to Mpls-Target Field",
+	            "route_id": "902",
+	            "route_short_name": "Green",
+	            "direction_id": 1,
+	            "direction_text": "WB",
+	            "schedule_relationship": "Scheduled"
+	        },
+	        {
+	            "actual": True,
+	            "trip_id": "21225914-JUN22-RAIL-Weekday-02",
+	            "stop_id": 56332,
+	            "departure_text": "18 Min",
+	            "departure_time": 1659015120,
+	            "description": "to Mpls-Target Field",
+	            "route_id": "902",
+	            "route_short_name": "Green",
+	            "direction_id": 1,
+	            "direction_text": "WB",
+	            "schedule_relationship": "Scheduled"
+	        },
+	        {
+	            "actual": False,
+	            "trip_id": "21226058-JUN22-RAIL-Weekday-02",
+	            "stop_id": 56332,
+	            "departure_text": "8:37",
+	            "departure_time": 1659015420,
+	            "description": "to Mpls-Target Field",
+	            "route_id": "902",
+	            "route_short_name": "Green",
+	            "direction_id": 1,
+	            "direction_text": "WB",
+	            "schedule_relationship": "Scheduled"
+	        }
+	    ]
+	}
 
 
     def test_get_route(self):
